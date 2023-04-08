@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tarjeta de credito</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="title">Tarjeta Knameless</h1>
+      <img src="assets/chip.png" alt="" class="chip"/>
+      <h2 class="numbers">1234 1234 1234 1234</h2>
+      <h3 class="name-user">A. Gonzalez</h3>
+      <p class="valid">VALIDO HASTA</p>
+      <h4 class="date">12/24</h4>
+    </div>
+  </div>
+  <script>
+    const root = document.querySelector(':root');
+    document.addEventListener('mousemove', (e) => {
+      const mouseX = 2 * (e.clientX / window.innerWidth) - 1;
+      const mouseY = 2 * (e.clientY / window.innerHeight) - 1;
+      // Update CSS Properties
+      console.log(mouseX);
+      console.log(mouseY);
+      root.style.setProperty('--mouse-x', mouseX);
+      root.style.setProperty('--mouse-y', -mouseY);
+    })
+  </script>
+</body>
+</html>

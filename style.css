@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+  /* background-color: darkblue; */
+}
+
+:root {
+  --max-rotation: 15deg;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(30deg, #385154, #001427);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 2px silver;
+  padding: 5px;
+}
+
+.card {
+  margin-top: 10%;
+  background-color: #01110A;
+  width: 25%;
+  border-radius: 15px 15px 15px 15px;
+  transition: padding 0.5s ease;
+  transform: rotateY(calc(var(--mouse-x)*var(--max-rotation))) rotateX(calc(var(--mouse-y)*var(--max-rotation)));
+}
+
+.title {
+  color: silver;
+  padding: 1rem 0rem 1rem 3rem;
+}
+
+.chip {
+  width: 13%;
+  margin: 0rem 0rem 0px 45px;
+  transform: rotate(90deg);
+}
+
+.numbers {
+  padding: 0rem 0rem 0px 3rem;
+  color: silver;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.name-user {
+  padding: 1rem 9rem 1rem 3rem;
+  display: inline-block;
+  color: silver;
+}
+
+.valid {
+  width: 8%;
+  font-size: 50%;
+  display: inline-block;
+  color: silver;
+}
+
+.date {
+  display: inline-block;
+  color: silver;
+}
