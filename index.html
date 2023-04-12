@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Css</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   </head>
   <body>
     <div>
@@ -49,14 +49,14 @@
           </p>
         </div>
         <div>
-          <img id="reload" src="./assets/msi1.png" alt="" />
+          <img id="reload" src="assets/msi1.png" alt="" />
         </div>
       </section>
       <section class="tarjeta" id="tarjeta">
         <div class="container">
           <div class="card">
             <h1 class="title">Tarjeta Fisa</h1>
-            <img src="./assets/chip.png" alt="" class="chip" />
+            <img src="assets/chip.png" alt="" class="chip" />
             <h2 class="numbers">1234 1234 1234 1234</h2>
             <h3 class="name-user">A. Gonzalez</h3>
             <p class="valid">VALIDO HASTA</p>
@@ -76,7 +76,7 @@
       </section>
       <div class="sticky-button">
         <a href="#">
-          <img class="btn-top" src="./assets/arrow.png" alt="" width="30px" />
+          <img class="btn-top" src="assets/arrow.png" alt="" width="30px" />
         </a>
       </div>
     </div>
@@ -84,13 +84,13 @@
       // Portatil
       window.onscroll = function (e) {
         if (window.pageYOffset > 600) {
-          document.getElementById("reload").src = "./assets/msi2.png";
+          document.getElementById("reload").src = "assets/msi2.png";
         }
         if (window.pageYOffset > 830) {
-          document.getElementById("reload").src = "./assets/msi3.png";
+          document.getElementById("reload").src = "assets/msi3.png";
         }
         if (window.pageYOffset <= 600) {
-          document.getElementById("reload").src = "./assets/msi1.png";
+          document.getElementById("reload").src = "assets/msi1.png";
         }
       };
       // Tarjeta
