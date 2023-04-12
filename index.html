@@ -8,75 +8,80 @@
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
-    <header>
-      <section class="titulo">
-        <nav class="menu-nav contenedor">
-          <div class="logo">
-            <h1>Knameless</h1>
+    <div>
+      <header>
+        <section class="titulo">
+          <nav class="menu-nav contenedor">
+            <div class="logo">
+              <h1>Knameless</h1>
+            </div>
+            <div class="links">
+              <li><a href="#laptop">Laptop</a></li>
+              <li><a href="#tarjeta">Tarjeta</a></li>
+            </div>
+          </nav>
+        </section>
+      </header>
+      <section class="hero">
+        <div class="color-back">
+          <div class="text-cont contenedor">
+            <h1>Titulo promedio</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat,
+              maxime. Consequatur, laborum fugit nam a esse modi nemo culpa
+              totam ea optio sed accusamus, voluptates eum in quasi molestiae.
+              Soluta!
+            </p>
+            <a href="#laptop">Ver mas</a>
           </div>
-          <div class="links">
-            <li><a href="#laptop">Laptop</a></li>
-            <li><a href="#tarjeta">Tarjeta</a></li>
-            <li><a href="#">si</a></li>
-            <li><a href="#">fa</a></li>
-          </div>
-        </nav>
+        </div>
       </section>
-    </header>
-    <section class="hero">
-      <div class="color-back">
-        <div class="text-cont contenedor">
-          <h1>Titulo promedio</h1>
+      <section class="lap" id="laptop">
+        <div class="par-text">
+          <h1>Laptop</h1>
+          <div class="division"></div>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat,
-            maxime. Consequatur, laborum fugit nam a esse modi nemo culpa totam
-            ea optio sed accusamus, voluptates eum in quasi molestiae. Soluta!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, et
+            est necessitatibus illo quas, ipsa aspernatur reiciendis eligendi
+            nam voluptatem similique. Voluptas dolor accusantium officiis atque
+            corrupti est velit ad.
           </p>
-          <a href="#laptop">Ver mas</a>
         </div>
-      </div>
-    </section>
-    <section class="lap" id="laptop">
-      <div class="par-text">
-        <h1>Laptop</h1>
-        <div class="division"></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, et
-          est necessitatibus illo quas, ipsa aspernatur reiciendis eligendi nam
-          voluptatem similique. Voluptas dolor accusantium officiis atque
-          corrupti est velit ad.
-        </p>
-      </div>
-      <div>
-        <img id="reload" src="assets/msi1.png" alt="" />
-      </div>
-    </section>
-    <section class="tarjeta" id="tarjeta">
-      <div class="container">
-        <div class="card">
-          <h1 class="title">Tarjeta Fisa</h1>
-          <img src="assets/chip.png" alt="" class="chip" />
-          <h2 class="numbers">1234 1234 1234 1234</h2>
-          <h3 class="name-user">A. Gonzalez</h3>
-          <p class="valid">VALIDO HASTA</p>
-          <h4 class="date">12/24</h4>
+        <div>
+          <img id="reload" src="assets/msi1.png" alt="" />
         </div>
+      </section>
+      <section class="tarjeta" id="tarjeta">
+        <div class="container">
+          <div class="card">
+            <h1 class="title">Tarjeta Fisa</h1>
+            <img src="assets/chip.png" alt="" class="chip" />
+            <h2 class="numbers">1234 1234 1234 1234</h2>
+            <h3 class="name-user">A. Gonzalez</h3>
+            <p class="valid">VALIDO HASTA</p>
+            <h4 class="date">12/24</h4>
+          </div>
+        </div>
+        <div class="par-text">
+          <h1>Tarjeta</h1>
+          <div class="division"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, et
+            est necessitatibus illo quas, ipsa aspernatur reiciendis eligendi
+            nam voluptatem similique. Voluptas dolor accusantium officiis atque
+            corrupti est velit ad.
+          </p>
+        </div>
+      </section>
+      <div class="sticky-button">
+        <a href="#">
+          <img class="btn-top" src="assets/arrow.png" alt="" width="30px" />
+        </a>
       </div>
-      <div class="par-text">
-        <h1>Tarjeta</h1>
-        <div class="division"></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, et
-          est necessitatibus illo quas, ipsa aspernatur reiciendis eligendi nam
-          voluptatem similique. Voluptas dolor accusantium officiis atque
-          corrupti est velit ad.
-        </p>
-      </div>
-    </section>
+    </div>
     <script>
       // Portatil
       window.onscroll = function (e) {
-        console.log(window.pageYOffset);
         if (window.pageYOffset > 600) {
           document.getElementById("reload").src = "assets/msi2.png";
         }
