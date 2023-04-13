@@ -243,7 +243,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 800px) and  (max-width: 1200px) {
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
   .menu-nav {
     display: flex;
     justify-content: space-between;
@@ -352,7 +352,6 @@ html {
 
   #reload {
     width: 400px;
-    margin: 10% 0% 0% -50%;
     transition: ease 0.3s;
   }
 
@@ -378,9 +377,9 @@ html {
 
   .card {
     margin-top: 10%;
-    margin-left: 50%;
+    margin-left: 20%;
     background-color: #01110a;
-    width: 300px;
+    width: 500px;
     border-radius: 15px 15px 15px 15px;
     transition: padding 0.5s ease;
     transform: rotateY(calc(var(--mouse-x) * var(--max-rotation)))
@@ -442,14 +441,656 @@ html {
     bottom: 0;
     top: 95px;
     padding: 2%;
-    padding-left: 95%;
+    padding-left: 93%;
     margin-bottom: 10%;
   }
 
   .btn-top {
     background-color: greenyellow;
     border-radius: 50px;
-    padding: 35%;
+    padding: 10%;
+    box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+    transition: ease 0.2s;
+  }
+
+  .btn-top:hover {
+    box-shadow: 0px 0px 10px 2px silver;
+    padding: 40%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .menu-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+
+  .contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .links li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  .links a {
+    margin: 15px;
+    text-decoration: none;
+    text-decoration: none;
+    text-align: center;
+    transition: ease 0.3s;
+  }
+
+  .links a:hover {
+    text-decoration: none;
+    color: #001427;
+    background-color: rgb(196, 190, 190);
+    border-radius: 15px;
+    padding: 3% 3% 3% 3%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: ease 0.3s;
+  }
+
+  /* menu */
+
+  .hero {
+    height: 845px;
+    background-image: url("../assets/lago.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .color-back {
+    background-color: rgba(0, 0, 0, 0.774);
+    padding: 0%;
+    height: 100%;
+    display: flex;
+  }
+
+  .text-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-cont h1 {
+    padding: 1%;
+    font-size: 60px;
+  }
+
+  .text-cont p {
+    padding: 3% 0% 3% 1%;
+    width: 50%;
+    text-align: center;
+  }
+
+  .text-cont a {
+    border-radius: 15px;
+    border: 1px solid green;
+    text-decoration: none;
+    text-align: center;
+    padding: 1% 3% 1% 3%;
+    transition: ease 0.3s;
+  }
+
+  /* Titulo */
+
+  .lap {
+    background-color: rgba(0, 0, 0, 0.774);
+    display: block;
+    justify-content: space-between;
+  }
+
+  .par-text {
+    padding: 5% 0% 5% 10%;
+  }
+
+  .par-text p {
+    width: 70%;
+  }
+
+  .division {
+    border: 1px solid rgba(0, 128, 0, 0.285);
+    margin-top: 1%;
+    margin-bottom: 3%;
+    width: 80%;
+  }
+
+  #reload {
+    width: 400px;
+    transition: ease 0.3s;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #reload:hover {
+    padding: 5px;
+  }
+
+  .card:hover {
+    box-shadow: 0px 0px 10px 2px silver;
+    padding: 5px;
+  }
+
+  .tarjeta {
+    background: #141c1d;
+    justify-content: space-between;
+  }
+
+  .card {
+    margin-top: 10%;
+    background-color: #01110a;
+    width: 390px;
+    border-radius: 15px 15px 15px 15px;
+    transition: padding 0.5s ease;
+    transform: rotateY(calc(var(--mouse-x) * var(--max-rotation)))
+      rotateX(calc(var(--mouse-y) * var(--max-rotation)));
+  }
+
+  .title {
+    color: silver;
+    padding: 1rem 0rem 1rem 3rem;
+  }
+
+  .chip {
+    width: 13%;
+    margin: 0rem 0rem 0px 45px;
+    transform: rotate(90deg);
+  }
+
+  .numbers {
+    padding: 0rem 0rem 0px 3rem;
+    color: silver;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .name-user {
+    padding: 1rem 9rem 1rem 3rem;
+    display: inline-block;
+    color: silver;
+  }
+
+  .valid {
+    width: 8%;
+    font-size: 50%;
+    display: inline-block;
+    color: silver;
+  }
+
+  .date {
+    display: inline-block;
+    color: silver;
+  }
+
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* Boton a top */
+
+  .sticky-button {
+    position: sticky;
+    bottom: 0;
+    top: 95px;
+    padding: 2%;
+    padding-left: 90%;
+    margin-bottom: 10%;
+  }
+
+  .btn-top {
+    background-color: greenyellow;
+    border-radius: 50px;
+    padding: 15%;
+    box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+    transition: ease 0.2s;
+  }
+
+  .btn-top:hover {
+    box-shadow: 0px 0px 10px 2px silver;
+    padding: 40%;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .menu-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+
+  .contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .links li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  .links a {
+    margin: 15px;
+    text-decoration: none;
+    text-decoration: none;
+    text-align: center;
+    transition: ease 0.3s;
+  }
+
+  .links a:hover {
+    text-decoration: none;
+    color: #001427;
+    background-color: rgb(196, 190, 190);
+    border-radius: 15px;
+    padding: 3% 3% 3% 3%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: ease 0.3s;
+  }
+
+  /* menu */
+
+  .hero {
+    height: 845px;
+    background-image: url("../assets/lago.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .color-back {
+    background-color: rgba(0, 0, 0, 0.774);
+    padding: 0%;
+    height: 100%;
+    display: flex;
+  }
+
+  .text-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-cont h1 {
+    padding: 1%;
+    font-size: 40px;
+  }
+
+  .text-cont p {
+    padding: 3% 0% 3% 1%;
+    width: 50%;
+    text-align: center;
+  }
+
+  .text-cont a {
+    border-radius: 15px;
+    border: 1px solid green;
+    text-decoration: none;
+    text-align: center;
+    padding: 1% 3% 1% 3%;
+    transition: ease 0.3s;
+  }
+
+  /* Titulo */
+
+  .lap {
+    background-color: rgba(0, 0, 0, 0.774);
+    display: block;
+    justify-content: space-between;
+  }
+
+  .par-text {
+    padding: 5% 0% 5% 10%;
+  }
+
+  .par-text p {
+    width: 70%;
+  }
+
+  .division {
+    border: 1px solid rgba(0, 128, 0, 0.285);
+    margin-top: 1%;
+    margin-bottom: 3%;
+    width: 80%;
+  }
+
+  #reload {
+    width: 400px;
+    transition: ease 0.3s;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #reload:hover {
+    padding: 5px;
+  }
+
+  .card:hover {
+    box-shadow: 0px 0px 10px 2px silver;
+    padding: 5px;
+  }
+
+  .tarjeta {
+    background: #141c1d;
+    justify-content: space-between;
+  }
+
+  .card {
+    margin-top: 10%;
+    background-color: #01110a;
+    width: 390px;
+    border-radius: 15px 15px 15px 15px;
+    transition: padding 0.5s ease;
+    transform: rotateY(calc(var(--mouse-x) * var(--max-rotation)))
+      rotateX(calc(var(--mouse-y) * var(--max-rotation)));
+  }
+
+  .title {
+    color: silver;
+    padding: 1rem 0rem 1rem 3rem;
+  }
+
+  .chip {
+    width: 13%;
+    margin: 0rem 0rem 0px 45px;
+    transform: rotate(90deg);
+  }
+
+  .numbers {
+    padding: 0rem 0rem 0px 3rem;
+    color: silver;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .name-user {
+    padding: 1rem 9rem 1rem 3rem;
+    display: inline-block;
+    color: silver;
+  }
+
+  .valid {
+    width: 8%;
+    font-size: 50%;
+    display: inline-block;
+    color: silver;
+  }
+
+  .date {
+    display: inline-block;
+    color: silver;
+  }
+
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* Boton a top */
+
+  .sticky-button {
+    position: sticky;
+    bottom: 0;
+    top: 95px;
+    padding: 2%;
+    padding-left: 90%;
+    margin-bottom: 10%;
+  }
+
+  .btn-top {
+    background-color: greenyellow;
+    border-radius: 50px;
+    padding: 15%;
+    box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+    transition: ease 0.2s;
+  }
+
+  .btn-top:hover {
+    box-shadow: 0px 0px 10px 2px silver;
+    padding: 40%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .menu-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+
+  .contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .links li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  .links a {
+    margin: 15px;
+    text-decoration: none;
+    text-decoration: none;
+    text-align: center;
+    transition: ease 0.3s;
+  }
+
+  .links a:hover {
+    text-decoration: none;
+    color: #001427;
+    background-color: rgb(196, 190, 190);
+    border-radius: 15px;
+    padding: 3% 3% 3% 3%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: ease 0.3s;
+  }
+
+  /* menu */
+
+  .hero {
+    height: 845px;
+    background-image: url("../assets/lago.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .color-back {
+    background-color: rgba(0, 0, 0, 0.774);
+    padding: 0%;
+    height: 100%;
+    display: flex;
+  }
+
+  .text-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-cont h1 {
+    padding: 1%;
+    font-size: 40px;
+  }
+
+  .text-cont p {
+    padding: 3% 0% 3% 1%;
+    width: 50%;
+    text-align: center;
+  }
+
+  .text-cont a {
+    border-radius: 15px;
+    border: 1px solid green;
+    text-decoration: none;
+    text-align: center;
+    padding: 1% 3% 1% 3%;
+    transition: ease 0.3s;
+  }
+
+  /* Titulo */
+
+  .lap {
+    background-color: rgba(0, 0, 0, 0.774);
+    display: block;
+    justify-content: space-between;
+  }
+
+  .par-text {
+    padding: 5% 0% 5% 10%;
+  }
+
+  .par-text p {
+    width: 70%;
+  }
+
+  .division {
+    border: 1px solid rgba(0, 128, 0, 0.285);
+    margin-top: 1%;
+    margin-bottom: 3%;
+    width: 80%;
+  }
+
+  #reload {
+    width: 50%;
+    height: auto;
+    transition: ease 0.3s;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #reload:hover {
+    padding: 5px;
+  }
+
+  .card:hover {
+    box-shadow: 0px 0px 10px 2px silver;
+    padding: 5px;
+  }
+
+  .tarjeta {
+    background: #141c1d;
+    justify-content: space-between;
+  }
+
+  .card {
+    margin-top: 10%;
+    background-color: #01110a;
+    width: 350px;
+    border-radius: 15px 15px 15px 15px;
+    transition: padding 0.5s ease;
+    transform: rotateY(calc(var(--mouse-x) * var(--max-rotation)))
+      rotateX(calc(var(--mouse-y) * var(--max-rotation)));
+  }
+
+  .title {
+    color: silver;
+    padding: 1rem 0rem 1rem 3rem;
+  }
+
+  .chip {
+    width: 13%;
+    margin: 0rem 0rem 0px 45px;
+    transform: rotate(90deg);
+  }
+
+  .numbers {
+    padding: 0rem 0rem 0px 3rem;
+    color: silver;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .name-user {
+    padding: 1rem 3rem 1rem 3rem;
+    display: inline-block;
+    color: silver;
+  }
+
+  .valid {
+    width: 8%;
+    font-size: 50%;
+    display: inline-block;
+    color: silver;
+  }
+
+  .date {
+    display: inline-block;
+    color: silver;
+  }
+
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* Boton a top */
+
+  .sticky-button {
+    position: sticky;
+    bottom: 0;
+    top: 95px;
+    padding: 2%;
+    padding-left: 85%;
+    margin-bottom: 10%;
+  }
+
+  .btn-top {
+    background-color: greenyellow;
+    border-radius: 50px;
+    padding: 15%;
     box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
     transition: ease 0.2s;
   }
